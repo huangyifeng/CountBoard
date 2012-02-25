@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60C14F8C72100D8567B /* UIKit.framework */; };
+		C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60E14F8C72100D8567B /* Foundation.framework */; };
+		C427E61114F8C72100D8567B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E61014F8C72100D8567B /* CoreGraphics.framework */; };
+		C427E61714F8C72200D8567B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C427E61514F8C72200D8567B /* InfoPlist.strings */; };
+		C427E61914F8C72200D8567B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61814F8C72200D8567B /* main.m */; };
+		C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61C14F8C72200D8567B /* AppDelegate.m */; };
+		C427E62014F8C72200D8567B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */; };
+		C427E62314F8C72200D8567B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E62214F8C72200D8567B /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C427E60814F8C72100D8567B /* CountBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C427E60C14F8C72100D8567B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C427E60E14F8C72100D8567B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C427E61014F8C72100D8567B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C427E61414F8C72200D8567B /* CountBoard-Info.plist */ = {isa = PBXFileReference; path = "CountBoard-Info.plist"; sourceTree = "<group>"; };
+		C427E61614F8C72200D8567B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C427E61814F8C72200D8567B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C427E61A14F8C72200D8567B /* CountBoard-Prefix.pch */ = {isa = PBXFileReference; path = "CountBoard-Prefix.pch"; sourceTree = "<group>"; };
+		C427E61B14F8C72200D8567B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C427E61C14F8C72200D8567B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C427E61F14F8C72200D8567B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C427E62114F8C72200D8567B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C427E62214F8C72200D8567B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C427E60514F8C72100D8567B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */,
+				C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */,
+				C427E61114F8C72100D8567B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C427E5FD14F8C72100D8567B = {
+			isa = PBXGroup;
+			children = (
+				C427E61214F8C72100D8567B /* CountBoard */,
+				C427E60B14F8C72100D8567B /* Frameworks */,
+				C427E60914F8C72100D8567B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C427E60914F8C72100D8567B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C427E60814F8C72100D8567B /* CountBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C427E60B14F8C72100D8567B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C427E60C14F8C72100D8567B /* UIKit.framework */,
+				C427E60E14F8C72100D8567B /* Foundation.framework */,
+				C427E61014F8C72100D8567B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C427E61214F8C72100D8567B /* CountBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C427E61B14F8C72200D8567B /* AppDelegate.h */,
+				C427E61C14F8C72200D8567B /* AppDelegate.m */,
+				C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */,
+				C427E62114F8C72200D8567B /* ViewController.h */,
+				C427E62214F8C72200D8567B /* ViewController.m */,
+				C427E61314F8C72200D8567B /* Supporting Files */,
+			);
+			path = CountBoard;
+			sourceTree = "<group>";
+		};
+		C427E61314F8C72200D8567B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C427E61414F8C72200D8567B /* CountBoard-Info.plist */,
+				C427E61514F8C72200D8567B /* InfoPlist.strings */,
+				C427E61814F8C72200D8567B /* main.m */,
+				C427E61A14F8C72200D8567B /* CountBoard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C427E60714F8C72100D8567B /* CountBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C427E62614F8C72200D8567B /* Build configuration list for PBXNativeTarget "CountBoard" */;
+			buildPhases = (
+				C427E60414F8C72100D8567B /* Sources */,
+				C427E60514F8C72100D8567B /* Frameworks */,
+				C427E60614F8C72100D8567B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountBoard;
+			productName = CountBoard;
+			productReference = C427E60814F8C72100D8567B /* CountBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C427E5FF14F8C72100D8567B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C427E60214F8C72100D8567B /* Build configuration list for PBXProject "CountBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C427E5FD14F8C72100D8567B;
+			productRefGroup = C427E60914F8C72100D8567B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C427E60714F8C72100D8567B /* CountBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C427E60614F8C72100D8567B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C427E61714F8C72200D8567B /* InfoPlist.strings in Resources */,
+				C427E62014F8C72200D8567B /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C427E60414F8C72100D8567B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C427E61914F8C72200D8567B /* main.m in Sources */,
+				C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */,
+				C427E62314F8C72200D8567B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C427E61514F8C72200D8567B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C427E61614F8C72200D8567B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C427E61F14F8C72200D8567B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C427E62414F8C72200D8567B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C427E62514F8C72200D8567B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C427E62714F8C72200D8567B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CountBoard/CountBoard-Prefix.pch";
+				INFOPLIST_FILE = "CountBoard/CountBoard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C427E62814F8C72200D8567B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CountBoard/CountBoard-Prefix.pch";
+				INFOPLIST_FILE = "CountBoard/CountBoard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C427E60214F8C72100D8567B /* Build configuration list for PBXProject "CountBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C427E62414F8C72200D8567B /* Debug */,
+				C427E62514F8C72200D8567B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C427E62614F8C72200D8567B /* Build configuration list for PBXNativeTarget "CountBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C427E62714F8C72200D8567B /* Debug */,
+				C427E62814F8C72200D8567B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C427E5FF14F8C72100D8567B /* Project object */;
+}
