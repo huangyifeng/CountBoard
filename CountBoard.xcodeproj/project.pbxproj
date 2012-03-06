@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBA1DB941500D73E0017613C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA1DB931500D73E0017613C /* SettingViewController.m */; };
+		BBD311E41505F11E00854CB6 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD311E31505F11E00854CB6 /* Score.m */; };
 		C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60C14F8C72100D8567B /* UIKit.framework */; };
 		C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60E14F8C72100D8567B /* Foundation.framework */; };
 		C427E61114F8C72100D8567B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E61014F8C72100D8567B /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		BBA1DB921500D73E0017613C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		BBA1DB931500D73E0017613C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		BBD311E21505F11E00854CB6 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		BBD311E31505F11E00854CB6 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		C427E60814F8C72100D8567B /* CountBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C427E60C14F8C72100D8567B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C427E60E14F8C72100D8567B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +53,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBD311DE1505EE0B00854CB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBD311E21505F11E00854CB6 /* Score.h */,
+				BBD311E31505F11E00854CB6 /* Score.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BBD311E01505EE1B00854CB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BBD311E11505EE9900854CB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C427E62114F8C72200D8567B /* ViewController.h */,
+				C427E62214F8C72200D8567B /* ViewController.m */,
+				BBA1DB921500D73E0017613C /* SettingViewController.h */,
+				BBA1DB931500D73E0017613C /* SettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C427E5FD14F8C72100D8567B = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +113,9 @@
 			children = (
 				C427E61B14F8C72200D8567B /* AppDelegate.h */,
 				C427E61C14F8C72200D8567B /* AppDelegate.m */,
-				C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */,
-				C427E62114F8C72200D8567B /* ViewController.h */,
-				C427E62214F8C72200D8567B /* ViewController.m */,
-				BBA1DB921500D73E0017613C /* SettingViewController.h */,
-				BBA1DB931500D73E0017613C /* SettingViewController.m */,
+				BBD311E11505EE9900854CB6 /* Controller */,
+				BBD311E01505EE1B00854CB6 /* View */,
+				BBD311DE1505EE0B00854CB6 /* Model */,
 				C427E61314F8C72200D8567B /* Supporting Files */,
 			);
 			path = CountBoard;
@@ -169,6 +198,7 @@
 				C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */,
 				C427E62314F8C72200D8567B /* ViewController.m in Sources */,
 				BBA1DB941500D73E0017613C /* SettingViewController.m in Sources */,
+				BBD311E41505F11E00854CB6 /* Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
