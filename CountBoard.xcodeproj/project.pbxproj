@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BBA1DB941500D73E0017613C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA1DB931500D73E0017613C /* SettingViewController.m */; };
+		BBAFDF301507007900248587 /* BoardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFDF2F1507007900248587 /* BoardSetting.m */; };
+		BBAFDF341507386500248587 /* ScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFDF331507386500248587 /* ScoreBoard.m */; };
+		BBAFDF38150738AC00248587 /* ScoreBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBAFDF37150738AC00248587 /* ScoreBoard.xib */; };
 		BBD311E41505F11E00854CB6 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD311E31505F11E00854CB6 /* Score.m */; };
 		C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60C14F8C72100D8567B /* UIKit.framework */; };
 		C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60E14F8C72100D8567B /* Foundation.framework */; };
@@ -22,6 +25,11 @@
 /* Begin PBXFileReference section */
 		BBA1DB921500D73E0017613C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		BBA1DB931500D73E0017613C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		BBAFDF2E1507007900248587 /* BoardSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardSetting.h; sourceTree = "<group>"; };
+		BBAFDF2F1507007900248587 /* BoardSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardSetting.m; sourceTree = "<group>"; };
+		BBAFDF321507386500248587 /* ScoreBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreBoard.h; sourceTree = "<group>"; };
+		BBAFDF331507386500248587 /* ScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoard.m; sourceTree = "<group>"; };
+		BBAFDF37150738AC00248587 /* ScoreBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreBoard.xib; sourceTree = "<group>"; };
 		BBD311E21505F11E00854CB6 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		BBD311E31505F11E00854CB6 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		C427E60814F8C72100D8567B /* CountBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +66,8 @@
 			children = (
 				BBD311E21505F11E00854CB6 /* Score.h */,
 				BBD311E31505F11E00854CB6 /* Score.m */,
+				BBAFDF2E1507007900248587 /* BoardSetting.h */,
+				BBAFDF2F1507007900248587 /* BoardSetting.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -66,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */,
+				BBAFDF321507386500248587 /* ScoreBoard.h */,
+				BBAFDF331507386500248587 /* ScoreBoard.m */,
+				BBAFDF37150738AC00248587 /* ScoreBoard.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 			files = (
 				C427E61714F8C72200D8567B /* InfoPlist.strings in Resources */,
 				C427E62014F8C72200D8567B /* MainStoryboard.storyboard in Resources */,
+				BBAFDF38150738AC00248587 /* ScoreBoard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +213,8 @@
 				C427E62314F8C72200D8567B /* ViewController.m in Sources */,
 				BBA1DB941500D73E0017613C /* SettingViewController.m in Sources */,
 				BBD311E41505F11E00854CB6 /* Score.m in Sources */,
+				BBAFDF301507007900248587 /* BoardSetting.m in Sources */,
+				BBAFDF341507386500248587 /* ScoreBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
