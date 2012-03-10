@@ -8,31 +8,73 @@
 
 #import "ScoreBoard.h"
 
+@interface ScoreBoard()
+
+- (void)_createTwoGestureRecognizer;
+- (void)_turnPage;
+- (void)_refreshState;
+
+
+@end
+
+
 @implementation ScoreBoard
 
 @synthesize score;
 
-- (id)initWithFrame:(CGRect)frame
+#pragma mark - private
+
+- (void)_turnPage
 {
-    self = [super initWithFrame:frame];
+//    [self]
+}
+
+- (void)_createTwoGestureRecognizer
+{
+    UISwipeGestureRecognizer *upRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp)];
+    upRgn.direction = UISwipeGestureRecognizerDirectionUp;
+    
+    UISwipeGestureRecognizer *downRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown)];
+    downRgn.direction = UISwipeGestureRecognizerDirectionDown;
+    
+    [self addGestureRecognizer:upRgn];
+    [self addGestureRecognizer:downRgn];
+}
+
+- (void)_refreshState
+{
+    self.text = [NSString stringWithFormat:@"%d",self.score];
+}
+
+#pragma mark - init
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
     if (self) {
         score = 0;
+        [self _createTwoGestureRecognizer];
     }
     return self;
 }
 
 - (void)awakeFromNib
 {
-    
+    [self _refreshState];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+#pragma mark - IBAction
+
+- (void)swipeUp
 {
-    // Drawing code
+    self.score++;
+    [self _refreshState];
 }
-*/
+
+- (void)swipeDown
+{
+    self.score--;
+    [self _refreshState];
+}
 
 @end

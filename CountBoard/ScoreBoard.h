@@ -12,4 +12,7 @@
 
 @property(nonatomic, assign) NSUInteger score;
 
+- (void)swipeUp;
+- (void)swipeDown;
+
 @end
