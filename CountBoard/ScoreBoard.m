@@ -33,9 +33,11 @@
 {
     UISwipeGestureRecognizer *upRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp)];
     upRgn.direction = UISwipeGestureRecognizerDirectionUp;
+    upRgn.delegate = self;
     
     UISwipeGestureRecognizer *downRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown)];
     downRgn.direction = UISwipeGestureRecognizerDirectionDown;
+    downRgn.delegate = self;
     
     [self addGestureRecognizer:upRgn];
     [self addGestureRecognizer:downRgn];
@@ -51,7 +53,8 @@
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
-    if (self) {
+    if (self) 
+    {
         score = 0;
         [self _createTwoGestureRecognizer];
     }
@@ -68,12 +71,18 @@
 - (void)swipeUp
 {
     self.score++;
+    [UIView beginAnimations:@"CountBoard_Swipe_Upside" context:nil];
+    
+    [UIView commitAnimations];
     [self _refreshState];
 }
 
 - (void)swipeDown
 {
-    self.score--;
+    if (0 < self.score) 
+    {
+        self.score--;
+    }
     [self _refreshState];
 }
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScoreBoard : UILabel
+@interface ScoreBoard : UILabel <UIGestureRecognizerDelegate>
 
 @property(nonatomic, assign) NSUInteger score;
 

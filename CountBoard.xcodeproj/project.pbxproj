@@ -11,6 +11,7 @@
 		BBAFDF301507007900248587 /* BoardSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFDF2F1507007900248587 /* BoardSetting.m */; };
 		BBAFDF341507386500248587 /* ScoreBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFDF331507386500248587 /* ScoreBoard.m */; };
 		BBD311E41505F11E00854CB6 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD311E31505F11E00854CB6 /* Score.m */; };
+		BBE9C7771510846D00594835 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE9C7761510846D00594835 /* MainViewController.m */; };
 		C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60C14F8C72100D8567B /* UIKit.framework */; };
 		C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E60E14F8C72100D8567B /* Foundation.framework */; };
 		C427E61114F8C72100D8567B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C427E61014F8C72100D8567B /* CoreGraphics.framework */; };
@@ -18,7 +19,6 @@
 		C427E61914F8C72200D8567B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61814F8C72200D8567B /* main.m */; };
 		C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61C14F8C72200D8567B /* AppDelegate.m */; };
 		C427E62014F8C72200D8567B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */; };
-		C427E62314F8C72200D8567B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E62214F8C72200D8567B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,8 @@
 		BBAFDF331507386500248587 /* ScoreBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreBoard.m; sourceTree = "<group>"; };
 		BBD311E21505F11E00854CB6 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		BBD311E31505F11E00854CB6 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		BBE9C7751510846D00594835 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BBE9C7761510846D00594835 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C427E60814F8C72100D8567B /* CountBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C427E60C14F8C72100D8567B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C427E60E14F8C72100D8567B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,8 +43,6 @@
 		C427E61B14F8C72200D8567B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C427E61C14F8C72200D8567B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C427E61F14F8C72200D8567B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C427E62114F8C72200D8567B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C427E62214F8C72200D8567B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +83,10 @@
 		BBD311E11505EE9900854CB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C427E62114F8C72200D8567B /* ViewController.h */,
-				C427E62214F8C72200D8567B /* ViewController.m */,
 				BBA1DB921500D73E0017613C /* SettingViewController.h */,
 				BBA1DB931500D73E0017613C /* SettingViewController.m */,
+				BBE9C7751510846D00594835 /* MainViewController.h */,
+				BBE9C7761510846D00594835 /* MainViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -206,11 +206,11 @@
 			files = (
 				C427E61914F8C72200D8567B /* main.m in Sources */,
 				C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */,
-				C427E62314F8C72200D8567B /* ViewController.m in Sources */,
 				BBA1DB941500D73E0017613C /* SettingViewController.m in Sources */,
 				BBD311E41505F11E00854CB6 /* Score.m in Sources */,
 				BBAFDF301507007900248587 /* BoardSetting.m in Sources */,
 				BBAFDF341507386500248587 /* ScoreBoard.m in Sources */,
+				BBE9C7771510846D00594835 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
