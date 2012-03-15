@@ -72,7 +72,9 @@
 {
     self.score++;
     [UIView beginAnimations:@"CountBoard_Swipe_Upside" context:nil];
-    
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self cache:YES];
     [UIView commitAnimations];
     [self _refreshState];
 }
@@ -81,6 +83,11 @@
 {
     if (0 < self.score) 
     {
+        [UIView beginAnimations:@"CountBoard_Swipe_Down" context:nil];
+        [UIView setAnimationDuration:1];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+        [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self cache:YES];
+        [UIView commitAnimations];
         self.score--;
     }
     [self _refreshState];
