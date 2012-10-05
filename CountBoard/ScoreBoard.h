@@ -12,7 +12,7 @@
 
 @property(nonatomic, assign) NSUInteger score;
 
-- (void)swipeUp;
-- (void)swipeDown;
+- (void)swipeUp:(UIGestureRecognizer *)sender;
+- (void)swipeDown:(UIGestureRecognizer *)sender;
 
 @end

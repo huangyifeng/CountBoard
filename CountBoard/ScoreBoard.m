@@ -8,6 +8,8 @@
 
 #import "ScoreBoard.h"
 
+static CGFloat k_transition_duration = 0.5;
+
 @interface ScoreBoard()
 
 - (void)_createTwoGestureRecognizer;
@@ -31,11 +33,11 @@
 
 - (void)_createTwoGestureRecognizer
 {
-    UISwipeGestureRecognizer *upRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp)];
+    UISwipeGestureRecognizer *upRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp:)];
     upRgn.direction = UISwipeGestureRecognizerDirectionUp;
     upRgn.delegate = self;
     
-    UISwipeGestureRecognizer *downRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown)];
+    UISwipeGestureRecognizer *downRgn = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
     downRgn.direction = UISwipeGestureRecognizerDirectionDown;
     downRgn.delegate = self;
     
@@ -68,18 +70,28 @@
 
 #pragma mark - IBAction
 
-- (void)swipeUp
+- (void)swipeUp:(UIGestureRecognizer *)sender
 {
     self.score++;
+<<<<<<< HEAD
     [UIView beginAnimations:@"CountBoard_Swipe_Upside" context:nil];
     [UIView setAnimationDuration:1];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self cache:YES];
     [UIView commitAnimations];
     [self _refreshState];
+=======
+    
+    UIViewAnimationOptions option = UIViewAnimationOptionTransitionCurlUp | UIViewAnimationOptionCurveEaseInOut;
+    
+    [UIView transitionWithView:sender.view duration:k_transition_duration options:option animations:^{
+        [self _refreshState];
+    } completion:nil];
+
+>>>>>>> scoreBoard
 }
 
-- (void)swipeDown
+- (void)swipeDown:(UIGestureRecognizer *)sender
 {
     if (0 < self.score) 
     {
@@ -89,8 +101,13 @@
         [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self cache:YES];
         [UIView commitAnimations];
         self.score--;
+        
+        UIViewAnimationOptions option = UIViewAnimationOptionTransitionCurlDown | UIViewAnimationOptionCurveEaseInOut;
+        
+        [UIView transitionWithView:sender.view duration:k_transition_duration options:option animations:^{
+            [self _refreshState];
+        } completion:nil];
     }
-    [self _refreshState];
 }
 
 @end
