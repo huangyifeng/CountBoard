@@ -73,37 +73,20 @@ static CGFloat k_transition_duration = 0.5;
 - (void)swipeUp:(UIGestureRecognizer *)sender
 {
     self.score++;
-<<<<<<< HEAD
-    [UIView beginAnimations:@"CountBoard_Swipe_Upside" context:nil];
-    [UIView setAnimationDuration:1];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self cache:YES];
-    [UIView commitAnimations];
-    [self _refreshState];
-=======
-    
+
     UIViewAnimationOptions option = UIViewAnimationOptionTransitionCurlUp | UIViewAnimationOptionCurveEaseInOut;
     
     [UIView transitionWithView:sender.view duration:k_transition_duration options:option animations:^{
         [self _refreshState];
     } completion:nil];
-
->>>>>>> scoreBoard
 }
 
 - (void)swipeDown:(UIGestureRecognizer *)sender
 {
     if (0 < self.score) 
     {
-        [UIView beginAnimations:@"CountBoard_Swipe_Down" context:nil];
-        [UIView setAnimationDuration:1];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
-        [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self cache:YES];
-        [UIView commitAnimations];
         self.score--;
-        
         UIViewAnimationOptions option = UIViewAnimationOptionTransitionCurlDown | UIViewAnimationOptionCurveEaseInOut;
-        
         [UIView transitionWithView:sender.view duration:k_transition_duration options:option animations:^{
             [self _refreshState];
         } completion:nil];
