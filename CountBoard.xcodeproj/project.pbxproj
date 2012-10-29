@@ -19,6 +19,8 @@
 		C427E61914F8C72200D8567B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61814F8C72200D8567B /* main.m */; };
 		C427E61D14F8C72200D8567B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C427E61C14F8C72200D8567B /* AppDelegate.m */; };
 		C427E62014F8C72200D8567B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C427E61E14F8C72200D8567B /* MainStoryboard.storyboard */; };
+		C462EDA8163EC83B000DBE3B /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C462EDA6163EC83B000DBE3B /* libMobClickLibrary.a */; };
+		C462EDB3163EEA1A000DBE3B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C462EDB2163EEA1A000DBE3B /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		C427E61B14F8C72200D8567B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C427E61C14F8C72200D8567B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C427E61F14F8C72200D8567B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C462EDA6163EC83B000DBE3B /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		C462EDA7163EC83B000DBE3B /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		C462EDB2163EEA1A000DBE3B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +55,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C462EDB3163EEA1A000DBE3B /* libz.dylib in Frameworks */,
 				C427E60D14F8C72100D8567B /* UIKit.framework in Frameworks */,
 				C427E60F14F8C72100D8567B /* Foundation.framework in Frameworks */,
 				C427E61114F8C72100D8567B /* CoreGraphics.framework in Frameworks */,
+				C462EDA8163EC83B000DBE3B /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +118,8 @@
 		C427E60B14F8C72100D8567B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C462EDB2163EEA1A000DBE3B /* libz.dylib */,
+				C462EDA4163EC81C000DBE3B /* umeng */,
 				C427E60C14F8C72100D8567B /* UIKit.framework */,
 				C427E60E14F8C72100D8567B /* Foundation.framework */,
 				C427E61014F8C72100D8567B /* CoreGraphics.framework */,
@@ -140,6 +149,15 @@
 				C427E61A14F8C72200D8567B /* CountBoard-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C462EDA4163EC81C000DBE3B /* umeng */ = {
+			isa = PBXGroup;
+			children = (
+				C462EDA6163EC83B000DBE3B /* libMobClickLibrary.a */,
+				C462EDA7163EC83B000DBE3B /* MobClick.h */,
+			);
+			name = umeng;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +307,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountBoard/CountBoard-Prefix.pch";
 				INFOPLIST_FILE = "CountBoard/CountBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -300,6 +323,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountBoard/CountBoard-Prefix.pch";
 				INFOPLIST_FILE = "CountBoard/CountBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
