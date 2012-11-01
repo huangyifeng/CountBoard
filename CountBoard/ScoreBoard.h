@@ -8,7 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class ScoreBoard;
+@protocol ScoreBoardDelegate <NSObject>
+
+- (void)scoreBoardSwipeUp:(ScoreBoard *)board;
+- (void)scoreBoardSwipeDown:(ScoreBoard *)board;
+
+@end
+
 @interface ScoreBoard : UILabel <UIGestureRecognizerDelegate>
+{
+@private
+    
+}
 
 @property(nonatomic, assign) NSUInteger score;
 
